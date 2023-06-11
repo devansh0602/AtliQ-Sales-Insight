@@ -8,6 +8,6 @@ An automated dashboard providing quick and latest sales insights in order to sup
 
 ### Success criteria
 ###### Dashboard(s) uncovering sales order insights with latest data available.
-##### 2
-Sales team able to make better decisions nad prove 10% cost savings of total spend.
+##### Sales team able to make better decisions nad prove 10% cost savings of total spend.
+##### Sales analysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity.
 
