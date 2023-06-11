@@ -8,4 +8,4 @@ An automated dashboard providing quick and latest sales insights in order to sup
 
 ### Success criteria
   ->  Dashboard(s) uncovering sales order insights with latest data available.
-  
+  ->  Sales team able to make better decisions nad prove 10% cost savings of total spend.
