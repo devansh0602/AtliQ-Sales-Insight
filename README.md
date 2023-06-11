@@ -6,4 +6,6 @@ To unlock insights that are not visible before for sales team for decision suppo
 ## End Result
 An automated dashboard providing quick and latest sales insights in order to support data driven decision making.
 
-
+### Success criteria
+  ->  Dashboard(s) uncovering sales order insights with latest data available.
+  
