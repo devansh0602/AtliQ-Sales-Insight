@@ -42,3 +42,14 @@ An automated dashboard providing quick and latest sales insights in order to sup
     QuoteStyle=QuoteStyle.Csv])
 2. #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}}),
 3. #"Made first rows as coumn names" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true])
+
+### Transactions table
+1. Source = Csv.Document(File.Contents("F:\Data analyst folder\Sales Insights Tables\transactions.csv"),[Delimiter=",", Columns=7, Encoding=1252, 
+    QuoteStyle=QuoteStyle.Csv])
+2. #"Made first rows as coumn names" = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+3. #"Changed Type" = Table.TransformColumnTypes(#"Made first rows as coumn names",{{"product_code", type text}, {"customer_code", type text}, {"market_code", type 
+     text}, {"order_date", type date}, {"sales_qty", Int64.Type}, {"sales_amount", Int64.Type}, {"currency", type text}})
+4. #"Removed rows with -1/0 values in sales_amount" = Table.SelectRows(#"Changed Type", each ([sales_amount] <> -1 and [sales_amount] <> 0))
+5. #"Added nrmlsd_sales_amt column" = Table.AddColumn(#"Removed rows with -1/0 values in sales_amount", "nrmlsd_sales_amt", each if [currency] = "INR" then 
+     [sales_amount] else [sales_amount]*82)
+6. #"Removed INR and USD" = Table.SelectRows(#"Added nrmlsd_sales_amt column", each ([currency] = "INR#(cr)" or [currency] = "USD#(cr)"))
