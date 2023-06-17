@@ -11,3 +11,6 @@ An automated dashboard providing quick and latest sales insights in order to sup
 * Sales team able to make better decisions nad prove 10% cost savings of total spend.
 + Sales analysts stop data gathering manually in order to save 20% of their business time and reinvest it value added activity.
 
+## Relationships between tables used:
+![Screenshot (114)](https://github.com/devansh0602/AtliQ-Sales-Insight/assets/110840898/1aeea11c-f506-4b4e-a987-a87dcbc9bbfe)
+
