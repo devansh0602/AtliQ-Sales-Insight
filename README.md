@@ -14,3 +14,9 @@ An automated dashboard providing quick and latest sales insights in order to sup
 ## Relationships between tables used:
 ![Screenshot (114)](https://github.com/devansh0602/AtliQ-Sales-Insight/assets/110840898/1aeea11c-f506-4b4e-a987-a87dcbc9bbfe)
 
+## Power Query used while transforming the data:
+
+### Customers table
+1. Source = Csv.Document(File.Contents("F:\Data analyst folder\Sales Insights Tables\customers.csv"),[Delimiter=",", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None])
+2. #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}}),
+3. #"Made first rows as coumn names" = Table.PromoteHeaders(#"Changed Type", [PromoteAllScalars=true])
