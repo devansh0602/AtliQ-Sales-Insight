@@ -6,6 +6,9 @@ To unlock insights that are not visible before for sales team for decision suppo
 ## End Result
 An automated dashboard providing quick and latest sales insights in order to support data driven decision making.
 
+## Dashboard
+![Screenshot (130)](https://github.com/devansh0602/AtliQ-Sales-Insight/assets/110840898/c32dfb14-7bda-4507-96a7-79c91c2eceaf)
+
 ## Success criteria
 - Dashboard(s) uncovering sales order insights with latest data available. 
 * Sales team able to make better decisions nad prove 10% cost savings of total spend.
